@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #e18d33; /* Light background for contrast */
+  color: #10375c; /* Darker text for readability */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  background-color: #10375c; /* Darker navbar */
+}
+
+.nav-link {
+  color: #f3c623 !important;
+  transition: color 0.3s ease;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-link:hover {
+  color: #eb8317 !important; /* Gold on hover */
+}
+
+.navbar-brand {
+  color: #f3c623 !important;
+  padding-left: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar-brand:hover {
+  color: #eb8317 !important;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.container {
+  max-width: 1200px; /* Limit width for better readability */
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 40px; /* Space between rows */
+}
+
+.smallimg {
+  height: auto;
+  max-height: 200px;
+  width: 100% !important;
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Image hover effect */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.smallimg:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.name {
+  font-weight: bold;
+  width: 100%;
+  color: #10375c; /* Primary color for names */
+}
+
+.ite {
+  text-align: justify;
+  margin-bottom: 15px;
+  background-color: #ffffff00; /* White background for content */
+
+  border-radius: 8px; /* Rounded corners for content boxes */
+
+  font-family: "Roboto", sans-serif; /* Body text */
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #333; /* Consistent heading color */
+  background-color: rgba(
+    64,
+    224,
+    208,
+    0
+  ); /* Transparent background color for the heading */
+  border-radius: 10px; /* Rounded corners for the heading */
+  padding: 10px; /* Padding around the heading */
+}
+
+/* Optional: Styles for lists */
+.ite ul {
+  padding-left: 20px;
+  background-color: #ffffff00;
+}
+
+.ite li {
+  margin-bottom: 5px;
+  background-color: #ffffff00;
+  position: relative; /* For custom bullet points */
+}
+
+.ite li::before {
+  content: "•"; /* Custom bullet */
+  color: #10375c; /* Color for bullet */
+  position: absolute;
+  left: -15px; /* Adjust position */
+}
+
+/* Other styles related to the tour can go here */
+
+.mainc {
+  background-color: rgba(
+    0,
+    128,
+    128,
+    0
+  ); /* Background color for the main container */
+  padding: 20px; /* Padding around the main container */
+  border-radius: 10px; /* Rounded corners for the main container */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for the main container */
+}
+
+.minic {
+  background-color: #ffffff00;
+}
+
+.headc {
+  background-color: #10375c; /* Transparent background for the heading wrapper */
+  border-radius: 10px;
+  padding: 15px; /* Optional: Add padding for better appearance */
+  margin-top: 14px;
+}
+
+.headc h1 {
+  color: #e18d33 !important;
+  margin-top: 5px;
+}
+.bigimg {
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+}
+.custom-caption {
+  position: absolute;
+  bottom: -60px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px; /* Space around text */
+  text-align: center; /* Center text */
+  transition: bottom 0.3s ease; /* Smooth transition */
+  color: #eb8317;
+}
+
+.carousel-item {
+  position: relative; /* To position caption correctly */
+}
+
+.booking-container {
+  background-color: #ffffff; /* White background for contrast */
+  padding: 20px; /* Padding around the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-top: 20px; /* Space above the booking container */
+}
+
+.booking-details,
+.amount-section {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.amount-section {
+  border-top: 1px solid #ccc; /* Light line to separate sections */
+  padding-top: 10px; /* Padding for top */
+}
+
+.tourconta {
+  background-color: #f3c623 !important;
+  border-radius: 15px;
+}
+
+.booking-label {
+  font-weight: bold; /* Bold labels */
+  color: #15273a !important; /* Primary color for labels */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  margin-top: 5px; /* Space above inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s; /* Transition effect */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+  border-color: #eb8317; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.btn-primary {
+  background-color: #10375c;
+  border: 0;
+  color: #e18d33;
+}
+
+.btn-primary:hover {
+  background-color: #104679;
+  color: #f3c623;
+}
+
+.bcont {
+  background-color: #f3c623;
+  border-radius: 15px;
+}
+
+.paybtn {
+  padding-bottom: 10px;
+}
+
+.btn-success {
+  background-color: #28a745; /* Green background */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 15px; /* Less padding on smaller screens */
+  }
+
+  .bigimg {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+.booking-container {
+  background-color: #ffffff; /* White background for contrast */
+  padding: 30px; /* Padding around the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 800px; /* Max width for better readability */
+  margin: 20px auto; /* Center align */
+}
+
+.booking-header {
+  font-family: "Montserrat", sans-serif; /* Consistent heading font */
+  font-size: 32px; /* Heading size */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Darker color for better readability */
+  text-align: center; /* Centered heading */
+}
+
+.booking-card {
+  display: flex; /* Flex layout for image and info */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.tour-image {
+  width: 300px; /* Fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.booking-info {
+  padding: 20px; /* Padding for the info section */
+  flex-grow: 1; /* Allow this to grow */
+}
+
+.tour-title {
+  font-size: 24px; /* Larger title size */
+  color: #eb8317; /* Primary color for title */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.booking-details {
+  margin-top: 20px; /* Space above details */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end; /* Align items to the right */
+  text-align: right; /* Right-align text */
+}
+
+.booking-label {
+  font-weight: bold; /* Bold labels */
+  color: #eb8317; /* Primary color for labels */
+  margin-right: 10px; /* Add space to the right */
+}
+
+.input-field {
+  width: 300px !important; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  margin-top: 5px; /* Space above inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s; /* Transition effect */
+}
+
+.input-field:focus {
+  border-color: #eb8317; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.btn-book {
+  background-color: #28a745; /* Green background */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+  width: 100%; /* Full width */
+}
+
+.btn-book:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.date-sel {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.det1 {
+  width: 100%;
+}
+
+.bigimg:hover {
+  scale: 1.05;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments for booking details */
+@media (max-width: 768px) {
+  .booking-details {
+    align-items: center; /* Center align on smaller screens */
+    text-align: center; /* Center text */
+  }
+  .input-field,
+  .date-sel {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* Add hover effects for buttons */
+.btn-success:hover,
+.btn-book:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* styles.css */
+.alert {
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.alert .btn {
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Registerscreen.css */
+.ogcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.card {
+  width: 800px; /* Adjust width to fit both form and image */
+}
+
+.dropdown-menu {
+  max-height: 300px; /* Set a max height */
+  overflow-y: auto; /* Enable scrolling if content exceeds the height */
+}
+.dropdown {
+  margin-right: 25px;
+}
+
+.custom-select-width {
+  width: 60%; /* Adjust the percentage as needed */
+  float: right;
+}
+
+.img-fluid {
+  border-radius: 20px !important;
+  float: left !important;
+}
+
+.custom-image {
+  max-width: 90%; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.hpj-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.det-cont {
+  text-align: justify;
+  float: right;
+  border: solid black 2px;
+  border-radius: 10px;
+  height: 400px;
+  background-color: #10375c;
+  color: #f3c623;
+  padding-top: 10px;
+}
+
+.logincard {
+  background-color: #10375c;
+  color: #f3c623;
+}
+.logtitle {
+  color: #e18d33 !important;
+}
+
+.logbtn {
+  background-color: #e18d33;
+  color: #10375c;
+  border: #10375c;
+}
+
+.reg-card {
+  margin-top: 50px !important;
+  margin-bottom: 50px;
+}
+
+.regrow {
+  margin-bottom: 0%;
+}
+
+.shbtn {
+  background-color: #eb8317;
+  color: #10375c;
+  border: #10375c;
+}
+
+#tourFilter {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.udet {
+  text-align: center;
+  border: black solid 2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 150px;
+  border-radius: 15px;
+  background-color: #10375c;
+  color: #f3c623;
+}
+
+.udet h1 {
+  color: #f3c623 !important;
+}
+
+.liss {
+  background-color: #10375c;
+}
+
+.udet-it {
+  text-align: justify;
+  background-color: #10375c;
+  color: #f3c623;
+  border: 0;
+}
+.usp {
+  font-weight: 550;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.modalc {
+  background-color: #10375c;
+  color: #f3c623;
+  border: solid #f3c623 1px;
+}
+#modtit {
+  border: 0px;
+}
+#clsbtn {
+  color: #f3c623;
+}
+.bkbtn {
+  background-color: #eb8317;
+  color: #10375c;
+  font-weight: 600;
+}
+
+.regintro {
+  color: #f3c623;
+  margin-top: 15px;
+}
+.regbtn {
+  color: #eb8317;
+}

@@ -1,0 +1,35 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-size: cover; /* Cover the entire area */
+  color: #10375c; /* Text color */
+  text-align: center; /* Center text */
+}
+
+.landing-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-slogan {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #10375c; /* Bootstrap primary color */
+  color: #f3c623;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #1c4c79; /* Darker shade for hover effect */
+  color: #fbc70d;
+}

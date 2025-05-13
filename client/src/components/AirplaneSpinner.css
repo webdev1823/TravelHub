@@ -1,0 +1,26 @@
+.airplane-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust based on your layout */
+}
+
+.airplane {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  background-image: url("./aeroplane-plane-svgrepo-com.svg"); /* Replace with the path to your airplane SVG */
+  background-size: cover;
+  animation: fly 1.5s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0) translateX(-50%); /* Start position */
+  }
+  50% {
+    transform: translateY(-20px) translateX(0); /* Fly upwards */
+  }
+  100% {
+    transform: translateY(0) translateX(50%); /* Return to start position */
+  }
+}
